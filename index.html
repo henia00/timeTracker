@@ -7,6 +7,10 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -25,97 +29,200 @@
 
 <body>
 
-  Report for
-  Jeremy Robson
+  <div class="main">
+    <header class="head">
+      <div class="name">
+        <div class="column">
+          <img class="photo" src="images/image-jeremy.png" alt="">
+        </div>
+        <div class="column">
+          <p>Report for <br><span class="username">Jeremy Robson</span> </p>
 
-  Daily
-  Weekly
-  Monthly
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#"></a>Daily</li>
+          <li><a href="#"></a>Weekly</li>
+          <li><a href="#"></a>Monthly</li>
+        </ul>
 
-  Work
-  5hrs
-  <!-- daily -->
-  Previous - 7hrs
-  <!-- daily -->
-  32hrs
-  <!-- weekly -->
-  Previous - 36hrs
-  <!-- weekly -->
-  103hrs
-  <!-- monthly -->
-  Previous - 128hrs
-  <!-- monthly -->
+      </div>
+    </header>
 
-  Play
-  1hr
-  <!-- daily -->
-  Previous - 2hrs
-  <!-- daily -->
-  10hrs
-  <!-- weekly -->
-  Previous - 8hrs
-  <!-- weekly -->
-  23hrs
-  <!-- monthly -->
-  Previous - 29hrs
-  <!-- monthly -->
+    <section class="work">
+      <img class="backgroundPicture" src="images/icon-work.svg" alt="">
+      <div class="content">
+        <div class="row">
+          <h2>Work</h2>
+          <div class="dots2"><img class="dots" src="images/icon-ellipsis.svg" alt=""></div>
+        </div>
+        <div class="row">
+          <span class="time">5hrs</span>
 
-  Study
-  0hrs
-  <!-- daily -->
-  Previous - 1hr
-  <!-- daily -->
-  4hrs
-  <!-- weekly -->
-  Previous - 7hrs
-  <!-- weekly -->
-  13hrs
-  <!-- monthly -->
-  Previous - 19hrs
-  <!-- monthly -->
+          <!-- daily -->
+          <span class="previousTime"> Previous - 7hrs</span>
+        </div>
+        <!-- daily -->
+        <!-- 32hrs -->
+        <!-- weekly -->
+        <!-- Previous - 36hrs -->
+        <!-- weekly -->
+        <!-- 103hrs -->
+        <!-- monthly -->
+        <!-- Previous - 128hrs -->
+        <!-- monthly -->
+      </div>
+    </section>
 
-  Exercise
-  1hr
-  <!-- daily -->
-  Previous - 1hr
-  <!-- daily -->
-  4hrs
-  <!-- weekly -->
-  Previous - 5hrs
-  <!-- weekly -->
-  11hrs
-  <!-- monthly -->
-  Previous - 18hrs
-  <!-- monthly -->
 
-  Social
-  1hr
-  <!-- daily -->
-  Previous - 3hrs
-  <!-- daily -->
-  5hrs
-  <!-- weekly -->
-  Previous - 10hrs
-  <!-- weekly -->
-  21hrs
-  <!-- monthly -->
-  Previous - 23hrs
-  <!-- monthly -->
+    <section class="play">
+      <img class="backgroundPicture" src="images/icon-play.svg" alt="">
+      <div class="content">
+        <div class="row">
+          <h2>Play</h2>
+          <div class="dots2"><img class="dots" src="images/icon-ellipsis.svg" alt=""></div>
+        </div>
+        <div class="row">
+          <span class="time">1hrs</span>
 
-  Self Care
-  0hrs
-  <!-- daily -->
-  Previous - 1hr
-  <!-- daily -->
-  2hrs
-  <!-- weekly -->
-  Previous - 2hrs
-  <!-- weekly -->
-  7hrs
-  <!-- monthly -->
-  Previous - 11hrs
-  <!-- monthly -->
+          <!-- daily -->
+          <span class="previousTime"> Previous - 2hrs</span>
+        </div>
 
+
+        <!-- 1hr -->
+        <!-- daily -->
+        <!-- Previous - 2hrs -->
+        <!-- daily -->
+        <!-- 10hrs -->
+        <!-- weekly -->
+        <!-- Previous - 8hrs -->
+        <!-- weekly -->
+        <!-- 23hrs -->
+        <!-- monthly -->
+        <!-- Previous - 29hrs -->
+        <!-- monthly -->
+    </section>
+
+    <section class="study">
+
+      <img class="backgroundPicture" src="images/icon-study.svg" alt="">
+      <div class="content">
+        <div class="row">
+          <h2>Study</h2>
+          <div class="dots2"><img class="dots" src="images/icon-ellipsis.svg" alt=""></div>
+        </div>
+        <div class="row">
+          <span class="time">0hrs</span>
+
+          <!-- daily -->
+          <span class="previousTime"> Previous - 1hrs</span>
+        </div>
+
+
+
+        <!-- 0hrs -->
+        <!-- daily -->
+        <!-- Previous - 1hr -->
+        <!-- daily -->
+        <!-- 4hrs -->
+        <!-- weekly -->
+        <!-- Previous - 7hrs -->
+        <!-- weekly -->
+        <!-- 13hrs -->
+        <!-- monthly -->
+        <!-- Previous - 19hrs -->
+        <!-- monthly -->
+    </section>
+
+    <section class="exercise">
+
+      <img class="backgroundPicture" src="images/icon-exercise.svg" alt="">
+      <div class="content">
+        <div class="row">
+          <h2>Exercise</h2>
+          <div class="dots2"><img class="dots" src="images/icon-ellipsis.svg" alt=""></div>
+        </div>
+        <div class="row">
+          <span class="time">1hrs</span>
+
+          <!-- daily -->
+          <span class="previousTime"> Previous - 1hrs</span>
+        </div>
+
+
+        <!-- 1hr -->
+        <!-- daily -->
+        <!-- Previous - 1hr -->
+        <!-- daily -->
+        <!-- 4hrs -->
+        <!-- weekly -->
+        <!-- Previous - 5hrs -->
+        <!-- weekly -->
+        <!-- 11hrs -->
+        <!-- monthly -->
+        <!-- Previous - 18hrs -->
+        <!-- monthly -->
+    </section>
+
+    <section class="social">
+      <img class="backgroundPicture" src="images/icon-social.svg" alt="">
+      <div class="content">
+        <div class="row">
+          <h2>Social</h2>
+          <div class="dots2"><img class="dots" src="images/icon-ellipsis.svg" alt=""></div>
+        </div>
+        <div class="row">
+          <span class="time">1hrs</span>
+
+          <!-- daily -->
+          <span class="previousTime"> Previous - 3hrs</span>
+        </div>
+
+        <!-- 1hr -->
+        <!-- daily -->
+        <!-- Previous - 3hrs -->
+        <!-- daily -->
+        <!-- 5hrs -->
+        <!-- weekly -->
+        <!-- Previous - 10hrs -->
+        <!-- weekly -->
+        <!-- 21hrs -->
+        <!-- monthly -->
+        <!-- Previous - 23hrs -->
+        <!-- monthly -->
+    </section>
+
+    <section class="care">
+      <img class="backgroundPicture" src="images/icon-self-care.svg" alt="">
+      <div class="content">
+        <div class="row">
+          <h2>Self Care</h2>
+          <div class="dots2"><img class="dots" src="images/icon-ellipsis.svg" alt=""></div>
+        </div>
+        <div class="row">
+          <span class="time">0hrs</span>
+
+          <!-- daily -->
+          <span class="previousTime"> Previous - 1hrs</span>
+        </div>
+
+
+        <!-- 0hrs -->
+        <!-- daily -->
+        <!-- Previous - 1hr -->
+        <!-- daily -->
+        <!-- 2hrs -->
+        <!-- weekly -->
+        <!-- Previous - 2hrs -->
+        <!-- weekly -->
+        <!-- 7hrs -->
+        <!-- monthly -->
+        <!-- Previous - 11hrs -->
+        <!-- monthly -->
+    </section>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

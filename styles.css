@@ -1,0 +1,177 @@
+:root {
+    --nameColor: hsl(246, 80%, 60%);
+    --workColor: hsl(15, 100%, 70%);
+    --playColor: hsl(195, 74%, 62%);
+    --studyColor: hsl(348, 100%, 68%);
+    --exerciseColor: hsl(145, 58%, 55%);
+    --socialColor: hsl(264, 64%, 52%);
+    --careColor: hsl(43, 84%, 65%);
+    --boxColor: hsl(235, 46%, 20%);
+    --veryDarkBlue: hsl(226, 43%, 10%);
+    --desaturatedBlue: hsl(235, 45%, 61%);
+    --paleBlue: hsl(236, 100%, 87%);
+    --contentWidth: 300px;
+    --contentHeight: 120px;
+
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    font-family: 'Rubik', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    background-color: #1c1c53;
+    min-width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-top: 50px;
+    height: 180px;
+}
+
+section {
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    height: 160px;
+    position: relative;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.backgroundPicture {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    z-index: 0;
+    width: 60px;
+    object-fit: cover;
+    clip: rect(5px, 80px, 80px, 0px);
+}
+
+.content {
+    background-color: var(--boxColor);
+    border-radius: 20px;
+    height: var(--contentHeight);
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.time {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.previousTime {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+section h2 {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.dots {
+    width: 30px;
+    padding-right: 20px;
+}
+
+.name p {
+    color: var(--paleBlue);
+    margin: 0;
+}
+
+.name {
+    background-color: var(--nameColor);
+    border-radius: 20px;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav {
+    color: var(--desaturatedBlue);
+    background-color: var(--boxColor);
+    text-align: center;
+
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+.photo {
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.username {
+    font-size: 20px;
+}
+
+
+
+.work {
+    background-color: var(--workColor);
+}
+
+.play {
+    background-color: var(--playColor);
+}
+
+.study {
+    background-color: var(--studyColor);
+}
+
+.exercise {
+    background-color: var(--exerciseColor);
+}
+
+.social {
+    background-color: var(--socialColor);
+}
+
+.care {
+    background-color: var(--careColor);
+}
+
+
+@media (min-width: 1440px) {}
